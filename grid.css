@@ -115,7 +115,9 @@
     }
     .content1 {
         grid-area: content1;
-        
+        display: flex;
+        justify-items: center;
+        align-items: center;
       
         
     }
