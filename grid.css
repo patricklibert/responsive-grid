@@ -1,0 +1,130 @@
+.header, .sidebar, .content1, .sidebar2, .footer {
+    border: 2px solid black;
+    background-color: grey;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+.responsive2 {
+    width: 20%;
+    height: auto;
+  }
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 515px) {
+    .gridresponsive {
+        display: grid;
+        
+        grid-template-columns: 2fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-areas: "header"
+                             "sidebar"
+                             "content1"
+                             "content1"
+                             "content1"
+                             "sidebar2"
+                             "footer";
+
+  
+
+    }
+    .header {
+        grid-area: header;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .content1 {
+        grid-area: content1;
+    }
+    .sidebar2 {
+        grid-area: sidebar2;
+    }
+    .footer {
+        grid-area: footer;
+    }
+
+}
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 515px) and (max-width: 960px) {
+    .gridresponsive {
+        display: grid;
+        
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-areas: "header header header header"
+                             "sidebar content1 content1 content1"
+                             "sidebar content1 content1 content1"
+                             "sidebar content1 content1 content1"
+                             "sidebar2 sidebar2 sidebar2 sidebar2"
+                             "footer footer footer footer";
+
+  
+
+    }
+    .header {
+        grid-area: header;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .content1 {
+        grid-area: content1;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .sidebar2 {
+        grid-area: sidebar2;
+    }
+    .footer {
+        grid-area: footer;
+    }
+
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .gridresponsive {
+        display: grid;
+        
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-areas: "header header header header header"
+                             "sidebar content1 content1 content1 sidebar2"
+                             "sidebar content1 content1 content1 sidebar2"
+                             "sidebar content1 content1 content1 sidebar2"
+                             "footer footer footer footer footer";
+
+  
+
+    }
+    .header {
+        grid-area: header;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .content1 {
+        grid-area: content1;
+        
+      
+        
+    }
+    .sidebar2 {
+        grid-area: sidebar2;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
+
+
